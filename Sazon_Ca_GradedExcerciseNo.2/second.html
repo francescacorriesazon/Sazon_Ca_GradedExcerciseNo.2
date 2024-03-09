@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<title>Second.html</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#189BCC;">
+    how to make the weezer blue album cover 10000x better
+    <div>
+        <button id="changeImage">Make it better</button>
+    </div>
+
+    <div>
+        <button id="revertImage">Make it boring</button>
+    </div>
+</body>
+<script>
+    window.addEventListener("DOMContentLoaded", function(){
+        var image = document.createElement("img");
+        image.src = '1.jpg';
+        document.body.appendChild(image);
+
+        changeImage.addEventListener("click", function(){
+            image.src = '2.jpg';
+        });
+
+        revertImage.addEventListener("click", function(){
+            image.src = '1.jpg';
+        })
+    });
+
+
+</script>
+</html>
